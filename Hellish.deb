@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hellish.dub — Official Studio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;900&family=Manrope:wght@300;500;800&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root { --primary: #FF1F44; --bg: #050505; --text: #F5F5F7; }
+        body { background-color: var(--bg); color: var(--text); font-family: 'Manrope', sans-serif; line-height: 1.4; overflow-x: hidden; -webkit-font-smoothing: antialiased; font-size: 14px; }
+        h1, h2, h3, .font-heading { font-family: 'Unbounded', sans-serif; text-transform: uppercase; letter-spacing: -0.01em; }
+        .hero-title { font-size: clamp(2.2rem, 7vw, 4.5rem); line-height: 0.9; }
+        .text-gradient { background: linear-gradient(135deg, #fff 0%, var(--primary) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .grid-bg { background-image: radial-gradient(circle at 1px 1px, rgba(255, 31, 68, 0.07) 1px, transparent 0); background-size: 30px 30px; position: fixed; inset: 0; z-index: -1; }
+        .btn-main { font-family: 'Unbounded', sans-serif; font-weight: 700; padding: 0.8rem 1.8rem; background: var(--primary); color: #000; transition: all 0.3s ease; display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-size: 0.75rem; text-decoration: none !important; border: none; cursor: pointer; }
+        .btn-main:hover { transform: scale(1.05); background: #fff; box-shadow: 0 0 20px rgba(255, 31, 68, 0.4); color: #000; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .section-padding { padding: 80px 0; }
+        .reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .nav-link { font-family: 'Unbounded', sans-serif; font-size: 0.65rem; font-weight: 700; opacity: 0.6; transition: 0.3s; text-decoration: none !important; color: white !important; }
+        .nav-link:hover { opacity: 1; color: var(--primary) !important; }
+        ::-webkit-scrollbar { width: 3px; }
+        ::-webkit-scrollbar-thumb { background: var(--primary); }
+    </style>
+</head>
+<body>
+    <div class="grid-bg"></div>
+
+    <nav class="fixed top-0 w-full z-50 px-6 py-4 flex justify-between items-center border-b border-white/5 backdrop-blur-xl bg-black/40">
+        <div class="font-heading font-black text-lg tracking-tighter">HELLISH<span class="text-red-600">.DUB</span></div>
+        <div class="hidden md:flex gap-6">
+            <a href="#about" class="nav-link">КТО МЫ</a>
+            <a href="#chat" class="nav-link">ПРАВИЛА</a>
+            <a href="#work" class="nav-link">ОЗВУЧКА</a>
+            <a href="#tiktok" class="nav-link">TIKTOK</a>
+        </div>
+        <a href="https://t.me/+T54vvhLy0DA2ZmMy" target="_blank" class="btn-main !py-2 !px-4 text-[10px]">В ЧАТ</a>
+    </nav>
+
+    <section id="about" class="min-h-screen flex items-center px-6">
+        <div class="max-w-5xl mx-auto w-full">
+            <div class="reveal active">
+                <span class="font-heading text-red-600 text-[9px] font-bold tracking-[0.5em] mb-4 block">INDEPENDENT VOICE STUDIO</span>
+                <h1 class="hero-title font-black mb-6">ГОЛОСА <br> <span class="text-gradient">ТВОЕГО АДА.</span></h1>
+                <p class="max-w-md text-sm md:text-base opacity-50 mb-8 font-medium">Мы — Hellish.dub. Команда, которая делает качественную озвучку для тех, кто горит творчеством. Присоединяйся к нам.</p>
+                <div class="flex flex-wrap gap-6 items-center">
+                    <a href="https://t.me/+T54vvhLy0DA2ZmMy" target="_blank" class="btn-main">ВСТУПИТЬ В СООБЩЕСТВО</a>
+                    <a href="https://www.tiktok.com/@hellish.dub" target="_blank" class="nav-link border-b border-white/20 pb-1">TIKTOK @hellish.dub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="chat" class="section-padding px-6 border-t border-white/5 bg-white/[0.01]">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div id="work" class="reveal">
+                    <h2 class="font-heading text-3xl mb-6">НАША <span class="text-red-600">ОЗВУЧКА</span></h2>
+                    <p class="opacity-50 mb-8 font-medium">Мы озвучиваем разные комиксы и отрывки из серий, вкладывая душу в каждый проект. Вы получаете законченную работу в высоком качестве — только для вас!</p>
+                    
+                    <div class="space-y-6">
+                        <div class="border-l-2 border-red-600 pl-4 py-1">
+                            <h4 class="font-heading text-sm mb-1 text-white">Для переводчиков и монтажеров</h4>
+                            <p class="text-xs opacity-60">Мы всегда рады новым талантам в нашей команде. Не стесняйтесь писать нам! <b>Hellish Dub ждет именно ВАС!</b></p>
+                        </div>
+                        <div class="border-l-2 border-white/10 pl-4 py-1">
+                            <h4 class="font-heading text-sm mb-1 text-white">Кастинги</h4>
+                            <p class="text-xs opacity-40">Ищем новые голоса среди участников. Твой голос может стать следующим в нашем проекте.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal">
+                    <div class="glass p-8 rounded-xl">
+                        <h3 class="font-heading text-lg mb-4 text-red-600">РЕГЛАМЕНТ ЧАТА</h3>
+                        <p class="text-xs opacity-60 mb-6">Чтобы всем было комфортно, мы соблюдаем простые правила:</p>
+                        <ul class="space-y-3 text-[13px] font-medium">
+                            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-red-600 rounded-full"></span> Без оскорблений и спама.</li>
+                            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-red-600 rounded-full"></span> Обсуждение проектов и творчества.</li>
+                            <li class="flex items-center gap-2 text-white font-bold italic border-b border-red-600/30 pb-1"><span class="w-1 h-1 bg-white rounded-full"></span> ПИСАТЬ АДМИНАМ ТОЛЬКО ПО ВАЖНЫМ ПРИЧИНАМ.</li>
+                        </ul>
+                        <p class="mt-6 text-[11px] opacity-40 italic">По всем мелким вопросам пишите в чат или комментарии — мы всё видим!</p>
+                        <a href="https://t.me/+T54vvhLy0DA2ZmMy" target="_blank" class="mt-8 block w-full text-center py-3 border border-red-600/30 text-red-600 font-heading text-[10px] hover:bg-red-600 hover:text-black transition-all">ПЕРЕЙТИ В ТГ ЧАТ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tiktok" class="section-padding px-6 border-t border-white/5">
+        <div class="max-w-3xl mx-auto text-center reveal">
+            <h2 class="font-heading text-3xl mb-4">МЫ В <span class="text-red-600">TIKTOK</span></h2>
+            <p class="opacity-40 mb-8 text-sm italic">Подписывайся на @hellish.dub для коротких нарезок и смешных моментов.</p>
+            <a href="https://www.tiktok.com/@hellish.dub" target="_blank" class="glass inline-flex items-center gap-4 px-10 py-5 rounded-full hover:border-red-600 transition-all group no-underline text-white">
+                <svg class="w-6 h-6 group-hover:text-red-600 transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z"/></svg>
+                <span class="font-heading font-black tracking-widest text-sm">TIKTOK PAGE</span>
+            </a>
+        </div>
+    </section>
+
+    <footer class="py-12 px-6 border-t border-white/5 bg-black">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="font-heading text-lg font-black tracking-tighter">HELLISH.DUB</div>
+            <div class="text-center md:text-right">
+                <p class="text-[10px] opacity-20 uppercase tracking-[0.3em] font-bold">Independent Fan Studio 2024</p>
+                <p class="text-[9px] opacity-10 mt-1">Не является официальным контентом VivziePop.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const reveal = () => {
+            document.querySelectorAll('.reveal').forEach(el => {
+                if (el.getBoundingClientRect().top < window.innerHeight - 50) el.classList.add('active');
+            });
+        };
+        window.addEventListener('scroll', reveal);
+        window.onload = reveal;
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if(target) target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
